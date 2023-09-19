@@ -49,6 +49,6 @@ INSERT INTO `npc_vendor` (`entry`,`slot`,`item`,`maxcount`,`incrtime`,`extendedc
   (@ENTRY, 0, 6265, 0, 0, 0, 0);
 
 
---agregando a la shop
+-- agregando a la shop
 insert  into `creature`(`guid`,`id1`,`id2`,`id3`,`map`,`zoneId`,`areaId`,`spawnMask`,`phaseMask`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`wander_distance`,`currentwaypoint`,`curhealth`,`curmana`,`MovementType`,`npcflag`,`unit_flags`,`dynamicflags`,`ScriptName`,`VerifiedBuild`) values
 (15130668,600800,0,0,1,0,0,1,1,0,-11828.3,-4719.85,7.00075,4.06631,300,0,0,5342,0,0,0,0,0,'',NULL);  -- vendedor de mats de clases en la shop
