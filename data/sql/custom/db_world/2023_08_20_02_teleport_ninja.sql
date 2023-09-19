@@ -666,7 +666,7 @@ INSERT INTO creature (guid, id1, map, spawnMask, phaseMask, equipment_id, positi
 (15122150, @ENTRY, 1, 1, 1, 0, -10393, 1405.27, 14.1598, 0.147161, 300, 0, 0, 4163, 0, 0, 0, 0, 0);
 
 
-insert  into `creature`(`guid`,`id1`,`id2`,`id3`,`map`,`zoneId`,`areaId`,`spawnMask`,`phaseMask`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`wander_distance`,`currentwaypoint`,`curhealth`,`curmana`,`MovementType`,`npcflag`,`unit_flags`,`dynamicflags`,`ScriptName`,`VerifiedBuild`) values 
+REPLACE INTO `creature`(`guid`,`id1`,`id2`,`id3`,`map`,`zoneId`,`areaId`,`spawnMask`,`phaseMask`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`wander_distance`,`currentwaypoint`,`curhealth`,`curmana`,`MovementType`,`npcflag`,`unit_flags`,`dynamicflags`,`ScriptName`,`VerifiedBuild`) values 
 (15130611,190000,0,0,571,0,0,1,1,0,5811.81,2089.02,636.062,5.09958,300,0,0,4163,0,0,0,0,0,'',NULL),
 (15130614,190000,0,0,571,0,0,1,1,0,3486.07,303.842,-120.074,5.60524,300,0,0,4163,0,0,0,0,0,'',NULL),
 (15130615,190000,0,0,571,0,0,1,1,0,5822.32,642.7,648.025,3.02262,300,0,0,4163,0,0,0,0,0,'',NULL),
