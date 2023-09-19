@@ -25,6 +25,6 @@ UPDATE `item_template` SET `Quality` = 3, `name` = "Cajon gigante", `description
 	
 
 -- spawmeando el npc en la shop
-insert  into `creature`(`guid`,`id1`,`id2`,`id3`,`map`,`zoneId`,`areaId`,`spawnMask`,`phaseMask`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`wander_distance`,`currentwaypoint`,`curhealth`,`curmana`,`MovementType`,`npcflag`,`unit_flags`,`dynamicflags`,`ScriptName`,`VerifiedBuild`) values 
+REPLACE INTO `creature`(`guid`,`id1`,`id2`,`id3`,`map`,`zoneId`,`areaId`,`spawnMask`,`phaseMask`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`wander_distance`,`currentwaypoint`,`curhealth`,`curmana`,`MovementType`,`npcflag`,`unit_flags`,`dynamicflags`,`ScriptName`,`VerifiedBuild`) values 
 (15130659,900100,0,0,1,0,0,1,1,0,-11882.9,-4698.7,6.1317,0.371301,300,0,0,5342,0,0,0,0,0,'',NULL);
 
