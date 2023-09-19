@@ -38,14 +38,12 @@ INSERT INTO `npc_vendor` (`entry`,`slot`,`item`,`maxcount`,`incrtime`,`extendedc
   (@ENTRY, 0, 21177, 0, 0, 0, 0),
   (@ENTRY, 0, 44605, 0, 0, 0, 0),
   (@ENTRY, 0, 22148, 0, 0, 0, 0),
-  
-  (@ENTRY, 0, 41584, 0, 0, 0, 0), -- Balas Mordedura de Escarcha
-  (@ENTRY, 0, 41586, 0, 0, 0, 0), -- Flecha vara de terror
-  (@ENTRY, 0, 43231, 0, 0, 0, 0), -- Veneno instantáneo
-  (@ENTRY, 0, 43233, 0, 0, 0, 0), -- Veneno mortal
-  (@ENTRY, 0, 43235, 0, 0, 0, 0), -- Veneno hiriente
-  (@ENTRY, 0, 43237, 0, 0, 0, 0), -- Veneno anestesico
-  
+  (@ENTRY, 0, 41584, 0, 0, 0, 0), 
+  (@ENTRY, 0, 41586, 0, 0, 0, 0),
+  (@ENTRY, 0, 43231, 0, 0, 0, 0),
+  (@ENTRY, 0, 43233, 0, 0, 0, 0),
+  (@ENTRY, 0, 43235, 0, 0, 0, 0),
+  (@ENTRY, 0, 43237, 0, 0, 0, 0),
   (@ENTRY, 0, 6265, 0, 0, 0, 0);
 
 
