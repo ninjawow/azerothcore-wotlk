@@ -22,8 +22,8 @@ DELETE FROM creature_template WHERE entry = @Trainer;
 DELETE FROM npc_trainer WHERE id = @Trainer;
 
 -- Create Trainer NPC
-insert  into `creature_template`(`entry`,`difficulty_entry_1`,`difficulty_entry_2`,`difficulty_entry_3`,`KillCredit1`,`KillCredit2`,`modelid1`,`modelid2`,`modelid3`,`modelid4`,`name`,`subname`,`IconName`,`gossip_menu_id`,`minlevel`,`maxlevel`,`exp`,`faction`,`npcflag`,`speed_walk`,`speed_run`,`speed_swim`,`speed_flight`,`detection_range`,`scale`,`rank`,`dmgschool`,`DamageModifier`,`BaseAttackTime`,`RangeAttackTime`,`BaseVariance`,`RangeVariance`,`unit_class`,`unit_flags`,`unit_flags2`,`dynamicflags`,`family`,`trainer_type`,`trainer_spell`,`trainer_class`,`trainer_race`,`type`,`type_flags`,`lootid`,`pickpocketloot`,`skinloot`,`PetSpellDataId`,`VehicleId`,`mingold`,`maxgold`,`AIName`,`MovementType`,`HoverHeight`,`HealthModifier`,`ManaModifier`,`ArmorModifier`,`ExperienceModifier`,`RacialLeader`,`movementId`,`RegenHealth`,`mechanic_immune_mask`,`spell_school_immune_mask`,`flags_extra`,`ScriptName`,`VerifiedBuild`) values
-(90001,0,0,0,0,0,21662,0,0,0,'Therelus','|cff00ccffMaestro entrenador global|r',0,0,80,80,0,35,51,1,1.14286,1,1,20,1,0,0,1,0,0,1,1,2,0,0,0,0,2,0,0,0,7,0,0,0,0,0,0,0,0,'',0,3,1,1,1,1,0,0,1,0,0,0,'',0);
+INSERT INTO creature_template (entry,modelid1,name,subname,minlevel,maxlevel,faction,npcflag,scale,unit_class,trainer_type,type,HoverHeight) VALUES
+(@Trainer,@MODEL,@NAME,@SUBNAME,80,80,35,51,1,2,2,7,3);
 
 -- Insert spells to trainer
 INSERT INTO npc_trainer (id,spellid) VALUES
@@ -192,9 +192,9 @@ INSERT INTO `npc_trainer` (`id`,`spellid`,`moneycost`,`reqskillline`,`reqskillra
 (@Skills,8737,10000,0,0,40), -- Mail Armor
 (@Skills,750,10000,0,0,40); -- Plate Armor
 
-insert  into `creature`(`guid`,`id1`,`id2`,`id3`,`map`,`zoneId`,`areaId`,`spawnMask`,`phaseMask`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`wander_distance`,`currentwaypoint`,`curhealth`,`curmana`,`MovementType`,`npcflag`,`unit_flags`,`dynamicflags`,`ScriptName`,`VerifiedBuild`) values
-(210069,90001,0,0,1,0,0,1,1,0,1577.51,-4399.33,6.72986,5.32927,300,0,0,4274,3994,0,0,134217728,0,'',NULL,0,NULL),
-(210070,90001,0,0,0,0,0,1,1,0,-8793.26,651.127,94.9977,3.88852,300,0,0,4274,3994,0,0,134217728,0,'',NULL,0,NULL);
+INSERT INTO creature (guid, id1, map, spawnMask, phaseMask, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, wander_distance, currentwaypoint, curhealth, curmana, MovementType, npcflag, unit_flags, dynamicflags) VALUE
+('210069', @Trainer, '1', '1', '1', '0', '1577.506714', '-4399.330078', '6.729856', '5.329268', '300', '0', '0', '4274', '3994', '0', '0', '134217728', '0'),
+('210070', @Trainer, '0', '1', '1', '0', '-8793.255859', '651.127380', '94.997719', '3.888520', '300', '0', '0', '4274', '3994', '0', '0', '134217728', '0');
 
 -- insertando en la shop
 insert  into `creature`(`guid`,`id1`,`id2`,`id3`,`map`,`zoneId`,`areaId`,`spawnMask`,`phaseMask`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`wander_distance`,`currentwaypoint`,`curhealth`,`curmana`,`MovementType`,`npcflag`,`unit_flags`,`dynamicflags`,`ScriptName`,`VerifiedBuild`) values
